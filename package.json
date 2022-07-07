@@ -3,43 +3,43 @@
   "private": true,
   "version": "1.1.20",
   "description": "🍰 An extensable, layer based shader material for ThreeJS.",
-  "main": "./index.cjs",
-  "module": "./index.js",
-  "types": "./index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "**"
   ],
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types": "./index.d.ts",
-      "require": "./index.cjs.js",
-      "import": "./index.js"
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.js"
     },
-    "./vanilla": {
-      "types": "./vanilla.d.ts",
-      "require": "./vanilla.cjs.js",
-      "import": "./vanilla.js"
+    "./dist/vanilla": {
+      "types": "./dist/vanilla.d.ts",
+      "require": "./dist/vanilla.cjs.js",
+      "import": "./dist/vanilla.js"
     },
-    "./types": {
-      "types": "./types.d.ts",
-      "require": "./types.cjs.js",
-      "import": "./types.js"
+    "./dist/types": {
+      "types": "./dist/types.d.ts",
+      "require": "./dist/types.cjs.js",
+      "import": "./dist/types.js"
     },
-    "./chunks/BlendModes": {
-      "types": "./chunks/BlendModes.d.ts",
-      "require": "./chunks/BlendModes.cjs.js",
-      "import": "./chunks/BlendModes.js"
+    "./dist/chunks/BlendModes": {
+      "types": "./dist/chunks/BlendModes.d.ts",
+      "require": "./dist/chunks/BlendModes.cjs.js",
+      "import": "./dist/chunks/BlendModes.js"
     },
-    "./chunks/Helpers": {
-      "types": "./chunks/Helpers.d.ts",
-      "require": "./chunks/Helpers.cjs.js",
-      "import": "./chunks/Helpers.js"
+    "./dist/chunks/Helpers": {
+      "types": "./dist/chunks/Helpers.d.ts",
+      "require": "./dist/chunks/Helpers.cjs.js",
+      "import": "./dist/chunks/Helpers.js"
     },
-    "./chunks/Noise": {
-      "types": "./chunks/Noise.d.ts",
-      "require": "./chunks/Noise.cjs.js",
-      "import": "./chunks/Noise.js"
+    "./dist/chunks/Noise": {
+      "types": "./dist/chunks/Noise.d.ts",
+      "require": "./dist/chunks/Noise.cjs.js",
+      "import": "./dist/chunks/Noise.js"
     }
   },
   "keywords": [
