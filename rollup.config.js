@@ -58,4 +58,52 @@ export default [
     external,
     plugins: [babel(getBabelOptions({ useESModules: false })), resolve({ extensions })],
   },
+  {
+    input: `./src/types.ts`,
+    output: { file: `dist/types.js`, format: 'esm' },
+    external,
+    plugins: [babel(getBabelOptions({ useESModules: true })), resolve({ extensions })],
+  },
+  {
+    input: `./src/types.ts`,
+    output: { file: `dist/types.cjs.js`, format: 'cjs' },
+    external,
+    plugins: [babel(getBabelOptions({ useESModules: false })), resolve({ extensions })],
+  },
+  {
+    input: `./src/chunks/BlendModes.ts`,
+    output: { file: `dist/chunks/BlendModes.js`, format: 'esm' },
+    external,
+    plugins: [babel(getBabelOptions({ useESModules: true })), resolve({ extensions })],
+  },
+  {
+    input: `./src/chunks/BlendModes.ts`,
+    output: { file: `dist/chunks/BlendModes.cjs.js`, format: 'cjs' },
+    external,
+    plugins: [babel(getBabelOptions({ useESModules: false })), resolve({ extensions })],
+  },
+  {
+    input: `./src/chunks/Helpers.ts`,
+    output: { file: `dist/chunks/Helpers.js`, format: 'esm' },
+    external,
+    plugins: [babel(getBabelOptions({ useESModules: true })), resolve({ extensions })],
+  },
+  {
+    input: `./src/chunks/Helpers.ts`,
+    output: { file: `dist/chunks/Helpers.cjs.js`, format: 'cjs' },
+    external,
+    plugins: [babel(getBabelOptions({ useESModules: false })), resolve({ extensions })],
+  },
+  {
+    input: `./src/chunks/Noise.ts`,
+    output: { file: `dist/chunks/Noise.js`, format: 'esm' },
+    external,
+    plugins: [babel(getBabelOptions({ useESModules: true })), resolve({ extensions })],
+  },
+  {
+    input: `./src/chunks/Noise.ts`,
+    output: { file: `dist/chunks/Noise.cjs.js`, format: 'cjs' },
+    external,
+    plugins: [babel(getBabelOptions({ useESModules: false })), resolve({ extensions })],
+  },
 ]
